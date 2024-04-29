@@ -334,6 +334,27 @@
   text-decoration: underline;
 }
 
+.container__popular {
+  margin-top: 4rem;
+  padding: 0 40px;
+}
+.container__popular--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+.container__popular--cards div {
+  width: 70%;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.container__popular--cards div:hover {
+  border-bottom: 5px solid black;
+}
+.container__popular--cards div h1 {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1250px) {
   .container__navbar {
     display: flex;
