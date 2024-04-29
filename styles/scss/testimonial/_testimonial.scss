@@ -1,0 +1,105 @@
+@import "../colors";
+.container__testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  height: 40rem;
+  width: 100%;
+
+  &--head {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    &__buttons {
+      button {
+        border: 1px solid $border;
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+        // font-size: 18px;
+
+        &:first-child {
+          color: #fff;
+          background-color: black;
+        }
+        &:nth-child(2) {
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+
+      &--view {
+        a {
+          color: black;
+          //   font-size: 18px;
+          &:hover {
+            background-color: black;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &--cards {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $graywhit;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: black;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      &::-webkit-scrollbar {
+        padding: 20px;
+      }
+    }
+
+    &__card {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 4rem;
+      & p:nth-child(2) {
+        position: absolute;
+        background-color: #fff;
+        padding: 0 0.2rem;
+        margin-left: 0.4rem;
+        bottom: 60px;
+      }
+
+      & p:nth-child(4) {
+        color: gray;
+      }
+
+      p {
+        transition: all 0.25s ease-in-out;
+      }
+
+      &:hover {
+        transition: all 0.25s ease-in-out;
+
+        & p:nth-child(2) {
+          margin-bottom: 10px;
+          //   transform: translateY(-10px);
+        }
+      }
+
+      &--img {
+        img {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}
