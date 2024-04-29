@@ -303,6 +303,12 @@
   object-fit: cover;
   cursor: pointer;
 }
+.container__cards--card__desc {
+  display: flex;
+  height: 5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .container__cards--card__desc h3 {
   font-size: 14px;
 }
