@@ -1,0 +1,45 @@
+.container__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin-top: 2rem;
+  padding: 0 50px;
+
+  &--card {
+    &__img {
+      img {
+        width: 17rem;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+
+    &__desc {
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 10px;
+        color: gray;
+      }
+
+      button {
+        border: none;
+        background-color: #fff;
+        color: black;
+        cursor: pointer;
+        &:hover {
+          background-color: black;
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:hover span {
+          text-decoration: none;
+        }
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

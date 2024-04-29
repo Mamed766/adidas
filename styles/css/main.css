@@ -255,7 +255,6 @@
   position: relative;
   cursor: pointer;
   margin-bottom: 4rem;
-  padding: 0.5rem 0.5rem;
 }
 .container__testimonial--cards__card:hover {
   border: 1px solid black;
@@ -285,6 +284,42 @@
   overflow: hidden;
 }
 
+.container__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin-top: 2rem;
+  padding: 0 50px;
+}
+.container__cards--card__img img {
+  width: 17rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.container__cards--card__desc h3 {
+  font-size: 14px;
+}
+.container__cards--card__desc p {
+  font-size: 10px;
+  color: gray;
+}
+.container__cards--card__desc button {
+  border: none;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+.container__cards--card__desc button:hover {
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+}
+.container__cards--card__desc button:hover span {
+  text-decoration: none;
+}
+.container__cards--card__desc button span {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1250px) {
   .container__nav--about {
     display: none;
@@ -309,10 +344,25 @@
 }
 @media screen and (max-width: 768px) {
   .container__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .container__navbar--search {
     padding: 0;
   }
   .container__navbar--search__logos--card:hover .container__navbar--search__logos--card__desc {
     display: none;
+  }
+  .container__content--desc {
+    padding: 0;
+  }
+  .container__testimonial--head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container__testimonial--cards::-webkit-scrollbar {
     width: 0;

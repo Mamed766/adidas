@@ -1,10 +1,32 @@
 @media screen and (max-width: 768px) {
   .container__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
+
+    &--search {
+      padding: 0;
+    }
   }
   .container__navbar--search__logos--card {
     &:hover &__desc {
       display: none;
+    }
+  }
+
+  .container__content {
+    &--desc {
+      padding: 0;
+    }
+  }
+
+  .container__testimonial {
+    &--head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
