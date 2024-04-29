@@ -1,17 +1,231 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 7 | @import "./breakpoints/1024px";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles\scss\main.scss 7:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502  @import \"./breakpoints/1024px\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles\\scss\\main.scss 7:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+  list-style: none;
 }
+
+.bold {
+  font-weight: 600;
+}
+
+.container__nav--about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5rem;
+  gap: 0.5rem;
+}
+.container__nav--about a {
+  text-decoration: none;
+  color: gray;
+  font-size: 10px;
+}
+.container__nav--about a:hover {
+  text-decoration: underline;
+}
+.container__nav--about img {
+  cursor: pointer;
+  width: 1rem;
+}
+.container__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.container__navbar .emptyy {
+  width: 15%;
+}
+.container__navbar--content > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.container__navbar--content ul > li:nth-child(4):hover .sale {
+  left: 0;
+  opacity: 1;
+}
+.container__navbar--content .sale {
+  border: 1px solid #e3e3e3;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+  left: -300rem;
+  opacity: 0;
+  height: 10rem;
+  width: 100%;
+  background-color: white;
+}
+.container__navbar--content .sale__cards--card {
+  display: flex;
+  gap: 5rem;
+}
+.container__navbar--content .sale p {
+  cursor: pointer;
+}
+.container__navbar--content .sale p:hover {
+  text-decoration: underline;
+}
+.container__navbar a {
+  text-decoration: none;
+  color: black;
+}
+.container__navbar a:hover {
+  border-bottom: 5px solid black;
+}
+.container__navbar--search {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 25%;
+}
+.container__navbar--search__user {
+  position: relative;
+}
+.container__navbar--search__user--circle {
+  position: absolute;
+  background-color: #ffd619;
+  bottom: 0.8rem;
+  left: 0.2rem;
+  border-radius: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.container__navbar--search__user--circle p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__navbar--search__input {
+  background-color: #eceff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e3e3e3;
+}
+.container__navbar--search__input i {
+  padding-right: 0.5rem;
+}
+.container__navbar--search__input:hover {
+  outline: auto;
+  outline-color: #ffd619;
+}
+.container__navbar--search__input input {
+  background-color: #eceff1;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+}
+.container__navbar--search__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.8rem;
+}
+.container__navbar--search__logos--card__desc {
+  position: absolute;
+  padding: 8px 16px;
+  top: 4.4rem;
+  right: 7rem;
+  border: 1px solid #e3e3e3;
+  background-color: #fff;
+  display: none;
+}
+.container__navbar--search__logos--card__desc p {
+  font-size: 20px;
+}
+.container__navbar--search__logos--card:hover
+  .container__navbar--search__logos--card__desc {
+  display: block;
+}
+.container__navbar--logo {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+.none {
+  display: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.container__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/ss24_adiclubdays_hp_general_mh_d_e7c2f4ab3e.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+}
+.container__content--desc {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 0.5rem;
+  width: 44%;
+  padding-left: 10rem;
+  font-size: 20px;
+  margin-top: 10%;
+  grid-row: 4/5;
+}
+.container__content--desc h3 {
+  font-size: 40px;
+}
+.container__content--desc__buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.container__content--desc__buttons button {
+  transition: all 0.25s ease-in-out;
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+.container__content--desc__buttons button:hover {
+  opacity: 0.5;
+}
+.container__content--desc__buttons button i {
+  transition: all 0.25s ease-in-out;
+}
+.container__content--desc__buttons button:hover i {
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 1250px) {
+  .container__nav--about {
+    display: none;
+  }
+  .container__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container__navbar--logo {
+    margin-top: 0.8rem;
+  }
+  .container__navbar--content {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container__content--desc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container__navbar {
+    padding: 0;
+  }
+  .container__navbar--search__logos--card:hover
+    .container__navbar--search__logos--card__desc {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
