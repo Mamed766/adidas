@@ -1,0 +1,46 @@
+.container__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background-image: url("https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_1920,w_1920/ss24_adiclubdays_hp_general_mh_d_e7c2f4ab3e.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45rem;
+
+  &--desc {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 0.5rem;
+    h3 {
+      font-size: 40px;
+    }
+    width: 44%;
+    padding-left: 10rem;
+    font-size: 20px;
+    margin-top: 10%;
+    grid-row: 4/5;
+
+    &__buttons {
+      display: flex;
+      gap: 0.5rem;
+
+      button {
+        transition: all 0.25s ease-in-out;
+        border: 1px solid black;
+
+        &:hover {
+          opacity: 0.5;
+        }
+        i {
+          transition: all 0.25s ease-in-out;
+        }
+        &:hover i {
+          transform: translateX(5px);
+        }
+
+        cursor: pointer;
+        padding: 8px 16px;
+      }
+    }
+  }
+}
