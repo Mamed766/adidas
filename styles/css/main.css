@@ -240,7 +240,7 @@
 }
 .container__testimonial--cards::-webkit-scrollbar {
   width: 12px;
-  height: 4px;
+  height: 6px;
 }
 .container__testimonial--cards::-webkit-scrollbar-track {
   background: #eceff1;
@@ -255,6 +255,11 @@
   position: relative;
   cursor: pointer;
   margin-bottom: 4rem;
+  padding: 0.5rem 0.5rem;
+}
+.container__testimonial--cards__card:hover {
+  border: 1px solid black;
+  transition: all 0.25s ease-in-out;
 }
 .container__testimonial--cards__card p:nth-child(2) {
   position: absolute;
@@ -277,6 +282,7 @@
 }
 .container__testimonial--cards__card--img img {
   width: 25rem;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1250px) {
@@ -307,6 +313,10 @@
   }
   .container__navbar--search__logos--card:hover .container__navbar--search__logos--card__desc {
     display: none;
+  }
+  .container__testimonial--cards::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 }
 
