@@ -36,7 +36,10 @@
   padding: 0 2rem;
 }
 .container__navbar .emptyy {
-  width: 15%;
+  width: 13%;
+}
+.container__navbar--content {
+  width: 60%;
 }
 .container__navbar--content > ul {
   display: flex;
@@ -141,6 +144,11 @@
   display: block;
 }
 .container__navbar--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translateY(-0.3rem);
   cursor: pointer;
   height: 3rem;
   width: 3rem;
@@ -254,7 +262,7 @@
 .container__testimonial--cards__card {
   position: relative;
   cursor: pointer;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .container__testimonial--cards__card:hover {
   border: 1px solid black;
@@ -321,9 +329,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .container__nav--about {
-    display: none;
-  }
   .container__navbar {
     display: flex;
     justify-content: space-between;
@@ -332,17 +337,20 @@
   .container__navbar--logo {
     margin-top: 0.8rem;
   }
-  .container__navbar--content {
-    display: none;
-  }
 }
 @media screen and (max-width: 1024px) {
   .container__content--desc {
     width: 100%;
     padding-left: 3rem;
   }
+  .container__navbar--content {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
+  .container__nav--about {
+    display: none;
+  }
   .container__navbar {
     display: flex;
     flex-direction: column;

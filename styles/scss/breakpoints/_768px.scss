@@ -1,4 +1,8 @@
 @media screen and (max-width: 768px) {
+  .container__nav--about {
+    display: none;
+  }
+
   .container__navbar {
     display: flex;
     flex-direction: column;

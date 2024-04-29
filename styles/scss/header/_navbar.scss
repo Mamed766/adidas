@@ -25,7 +25,7 @@
   &__navbar {
     display: flex;
     .emptyy {
-      width: 15%;
+      width: 13%;
     }
 
     // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));s
@@ -33,6 +33,7 @@
     align-items: center;
     padding: 0 2rem;
     &--content {
+      width: 60%;
       & > ul {
         display: flex;
         gap: 1.5rem;
@@ -161,6 +162,11 @@
     }
 
     &--logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: translateY(-0.3rem);
       cursor: pointer;
       height: 3rem;
       width: 3rem;
