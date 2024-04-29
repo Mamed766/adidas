@@ -1,0 +1,17 @@
+.container__story {
+  background-color: $pastelyellow;
+  margin-top: 4rem;
+  padding: 2rem 8rem;
+  &--cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

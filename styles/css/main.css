@@ -355,6 +355,24 @@
   font-size: 30px;
 }
 
+.container__story {
+  background-color: #f5f5e5;
+  margin-top: 4rem;
+  padding: 2rem 8rem;
+}
+.container__story--cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.container__story--cards__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container__story--cards__card p {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1250px) {
   .container__navbar {
     display: flex;
