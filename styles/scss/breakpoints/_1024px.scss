@@ -9,4 +9,18 @@
   .container__navbar--content {
     display: none;
   }
+
+  .footer {
+    &__cards {
+      & li:nth-child(2) {
+        display: none;
+      }
+      & li:nth-child(3) {
+        display: none;
+      }
+      & li:nth-child(4) {
+        display: none;
+      }
+    }
+  }
 }
