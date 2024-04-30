@@ -363,6 +363,7 @@
 .container__story--cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 2rem;
 }
 .container__story--cards__card {
   display: flex;
