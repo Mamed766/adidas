@@ -1,0 +1,25 @@
+.container__join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: $yellow;
+  &--card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    button {
+      padding: 8px 16px;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      background-color: black;
+      color: #fff;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

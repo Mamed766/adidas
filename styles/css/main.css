@@ -374,6 +374,32 @@
   font-size: 12px;
 }
 
+.container__join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: #ede734;
+}
+.container__join--card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container__join--card button {
+  padding: 8px 16px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+.container__join--card button:hover {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 1250px) {
   .container__navbar {
     display: flex;
@@ -421,6 +447,17 @@
   .container__testimonial--cards::-webkit-scrollbar {
     width: 0;
     height: 0;
+  }
+  .container__join {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__join--card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__join--card button {
+    margin-bottom: 1rem;
   }
 }
 

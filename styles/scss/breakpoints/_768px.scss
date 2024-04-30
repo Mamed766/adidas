@@ -40,4 +40,18 @@
       height: 0;
     }
   }
+  // join
+
+  .container__join {
+    display: flex;
+    flex-direction: column;
+    &--card {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
